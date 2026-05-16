@@ -12,5 +12,9 @@
   "packageManager": "pnpm@10.6.5",
   "devDependencies": {
     "@changesets/cli": "^2.31.0"
-  }
+  },
+  "workspaces": [
+    "p1",
+    "p2"
+  ]
 }
