@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "pnpm changeset version && git add . && git commit -m \"release\" && git tag v$(node -p \"require('./package.json').version\")"
   },
   "keywords": [],
   "author": "",
